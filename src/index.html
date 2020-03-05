@@ -1,94 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
-      crossorigin="anonymous"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <main>
-      <aside>
-        <!-- images -->
-        <img src="" alt="Fancy Phone Photos" />
-      </aside>
-      <article>
-        <!-- login flow -->
-        <section>
-          <!-- Sign up form -->
-          <h1>Instagram</h1>
-          <h2>Sign up to see photos and videos from your friends</h2>
-          <button
-            type="button"
-            onclick="window.location.href = 'https://www.facebook.com/login'"
-          >
-            Log in with facebook
-          </button>
-          <!-- visual OR seperator with Horizontal rule -->
-          <div>
-            <hr />
-            <span>OR</span>
-            <hr />
-          </div>
-          <!-- signup form -->
-          <form action="#" target="__blank">
-            <input name="email_phone" placeholder="Mobile Number or Email" />
-            <input name="full_name" placeholder="Full Name" />
-            <input name="username" placeholder="Username" />
-            <input type="password" name="password" placeholder="Password" />
-            <button type="submit">Sign Up</button>
-          </form>
-          <p>
-            By Signing up you agree to our
-            <a href="https://help.instagram.com/581066165581870"><b>Terms</b></a
-            >,
-            <a href="https://help.instagram.com/519522125107875"
-              ><b>Data Policy</b></a
-            >
-            and
-            <a href="https://www.instagram.com/legal/cookies/"
-              ><b>Cookies Policy</b></a
-            >
-            .
-          </p>
-        </section>
-        <section>
-          <!-- Sign in form -->
-          <span>Have An account?</span>
-          <a href="Log in">Log in</a>
-        </section>
-        <section>
-          <!-- App Store Call to action -->
-          <p>Get the app.</p>
-          <div>
-            <a
-              href="https://itunes.apple.com/app/instagram/id389801252?pt=428156&ct=igweb.signupPage.badge&mt=8&vt=lo"
-            >
-              <img
-                src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png"
-                alt="Download from Apple App Store"
-              />
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DsignupPage%26ig_mid%3D3F80CC44-CB75-42A4-BA21-980093AE428E%26utm_content%3Dlo%26utm_medium%3Dbadge"
-            >
-              <img
-                src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png"
-                alt="Downlad from Google Play store"
-            /></a>
-          </div>
-        </section>
-      </article>
-    </main>
-    <footer>
-      <!-- end links -->
-      <nav></nav>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" /> -->
+  <link rel="stylesheet" type="text/css" href="./index.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <aside>
+      <!-- images -->
+      <!-- <img src="https://www.instagram.com/static/images/homepage/screenshot2-2x.jpg/177140221987.jpg"
+        alt="Fancy Phone Photos" /> -->
+    </aside>
+    <article id="user-flow">
+      <!-- login flow -->
+      <section id="signup">
+        <!-- Sign up form -->
+        <h1>Instagram</h1>
+        <h2>Sign up to see photos and videos from your friends</h2>
+        <button class="login-facebook" type="button" onclick="window.location.href = 'https://www.facebook.com/login'">
+          Log in with Facebook
+        </button>
+        <!-- visual OR seperator with Horizontal rule -->
+        <div id='signup-seperator'>
+          <span class="hr"></span>
+          <span class="text"><b>OR</b></span>
+          <span class="hr">
+        </div>
+        <!-- signup form -->
+        <form id='signup-form' action="#" target="__blank">
+          <input name="email_phone" placeholder="Mobile Number or Email" />
+          <input name="full_name" placeholder="Full Name" />
+          <input name="username" placeholder="Username" />
+          <input type="password" name="password" placeholder="Password" />
+          <button type="submit">Sign Up</button>
+        </form>
+        <p id="terms">
+          By Signing up you agree to our
+          <a href="https://help.instagram.com/581066165581870"><b>Terms</b></a>,
+          <a href="https://help.instagram.com/519522125107875"><b>Data Policy</b></a>
+          and
+          <a href="https://www.instagram.com/legal/cookies/"><b>Cookies Policy</b></a>
+          .
+        </p>
+      </section>
+      <section id="login">
+        <!-- Sign in form -->
+        <p>Have An account? <a href="Log in">Log in</a></p>
+        
+      </section>
+      <section>
+        <!-- App Store Call to action -->
+        <p>Get the app.</p>
+        <div id='app-store'>
+          <a href="https://itunes.apple.com/app/instagram/id389801252?pt=428156&ct=igweb.signupPage.badge&mt=8&vt=lo">
+            <img
+              src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png"
+              alt="Download from Apple App Store" />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DsignupPage%26ig_mid%3D3F80CC44-CB75-42A4-BA21-980093AE428E%26utm_content%3Dlo%26utm_medium%3Dbadge">
+            <img
+              src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png"
+              alt="Downlad from Google Play store" /></a>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <!-- end links -->
+    <nav>
+      <ul>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">HELP</a></li>
+        <li><a href="#">PRESS</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">JOBS</a></li>
+        <li><a href="#">PRIVACY</a></li>
+        <li><a href="#">LOCATIONS</a></li>
+        <li><a href="#">TOP ACCOUNTS</a></li>
+        <li><a href="#">HASHTAGS</a></li>
+        <li><a href="#">LANGUAGE</a></li>
+      </ul>
+    </nav>
+    <span>&copy; 2020 INSTAGRAM FROM FACEBOOK</span>
+  </footer>
+</body>
+
 </html>
